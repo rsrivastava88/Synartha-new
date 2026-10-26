@@ -924,7 +924,7 @@ html.page-terms{scroll-padding-top:24px}
       <ol class="progress" id="progress" aria-hidden="true"><li class="now"></li><li></li><li></li><li></li></ol>
       <p class="step-count" id="stepCount" aria-live="polite">Step 1 of 4: About you</p>
 
-      <form id="appForm" action="" method="post" novalidate>
+      <form id="appForm" action="https://script.google.com/macros/s/AKfycbzJXZKEo19QT-9fa4WhgmJdLIOmLcpUWdAw0TJOLogtFJR9kBy4ECKaRFVQcjXWvR-y/exec" method="post" novalidate>
         <fieldset class="step is-active" data-step="0" data-title="About you">
           <legend tabindex="-1">Let's get to know you</legend>
           <div class="field">
@@ -1241,7 +1241,7 @@ const SYNARTHA_CONFIG = {
   // and returns a 2xx status works (Formspree, Getform, Basin, your own API).
   // Also put the same URL in the <form action=""> attribute so the form
   // still submits for visitors with JavaScript turned off.
-  formEndpoint: '',
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbzJXZKEo19QT-9fa4WhgmJdLIOmLcpUWdAw0TJOLogtFJR9kBy4ECKaRFVQcjXWvR-y/exec',
 
   // 'auto' turns test mode on for localhost, file:// and any URL with ?dev.
   // In test mode with no endpoint, submissions are previewed, never sent.
@@ -1580,7 +1580,8 @@ const SYNARTHA_CONFIG = {
     try {
       const res = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        // text/plain avoids a CORS preflight, which Google Apps Script does not support
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload)
       });
       if (!res.ok) throw new Error('The server responded with error ' + res.status + '.');
