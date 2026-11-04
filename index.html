@@ -72,6 +72,10 @@ html:not(.js) .doodle path,html:not(.js) .doodle circle,html:not(.js) .doodle el
 .hero > .top{z-index:3}
 .top-row{width:var(--wrap);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:600;font-size:1.15rem;letter-spacing:-.02em}
+.top-nav{display:flex;align-items:center;gap:24px}
+.top-nav a{color:#fff;text-decoration:none;font-size:.92rem;font-weight:500;opacity:.85;transition:opacity .2s}
+.top-nav a:hover,.top-nav a:focus-visible{opacity:1;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:640px){.top-nav{display:none}}
 
 .top .btn{min-height:42px;padding:0 20px;font-size:.92rem}
 
@@ -685,7 +689,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
 
 
 <nav class="dock" id="dock" aria-label="Sections">
-  <a href="#about">About</a>
+  <a href="?page=about-synartha">About</a>
   <a href="#journey">Journey</a>
   <a href="#benefits">Skills</a>
   <a href="#stack" class="opt-link">Tools</a>
@@ -702,6 +706,9 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
 <header class="top">
   <div class="top-row">
     <a class="brand brand-top" href="#top" aria-label="Synartha, back to top"><span class="logo-full" aria-hidden="true"></span></a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="?page=about-synartha">About</a>
+    </nav>
     <a class="btn btn-white" href="#apply">Apply now</a>
   </div>
 </header>
@@ -1163,7 +1170,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     </div>
     <footer class="foot">
       <a class="brand brand-foot" href="#top" aria-label="Synartha, back to top"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="#about">About</a><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a></div>
       <div class="social-wrap"><span class="social-label" id="followLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="followLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </footer>
@@ -1385,7 +1392,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="followLbl2">Follow Synartha</span><div class="social" role="list" aria-labelledby="followLbl2"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1400,7 +1407,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     <div class="tc-top">
       <a class="tc-brand" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
       <div class="tc-actions">
-        <a class="btn btn-line" href="./" data-home="#about">Back to About Synartha</a>
+        <a class="btn btn-line" href="?page=about-synartha">Back to About Synartha</a>
         <a class="btn btn-line" href="./" data-home="#leaders">Back to leadership</a>
         <a class="btn btn-white" href="./#apply" data-home="#apply">Apply now</a>
       </div>
@@ -1473,7 +1480,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="phFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="phFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1488,7 +1495,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     <div class="tc-top">
       <a class="tc-brand" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
       <div class="tc-actions">
-        <a class="btn btn-line" href="./" data-home="#about">Back to About Synartha</a>
+        <a class="btn btn-line" href="?page=about-synartha">Back to About Synartha</a>
         <a class="btn btn-line" href="./" data-home="#leaders">Back to leadership</a>
         <a class="btn btn-white" href="./#apply" data-home="#apply">Apply now</a>
       </div>
@@ -1560,7 +1567,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="rsFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="rsFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1623,7 +1630,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="asFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="asFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1638,7 +1645,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     <div class="tc-top">
       <a class="tc-brand" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
       <div class="tc-actions">
-        <a class="btn btn-line" href="./" data-home="#about">Back to About Synartha</a>
+        <a class="btn btn-line" href="?page=about-synartha">Back to About Synartha</a>
         <a class="btn btn-white" href="./#apply" data-home="#apply">Apply now</a>
       </div>
     </div>
@@ -1685,7 +1692,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="ovFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="ovFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
