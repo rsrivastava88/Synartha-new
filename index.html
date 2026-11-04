@@ -380,6 +380,31 @@ html:not(.js) [data-prev],html:not(.js) [data-next]{display:none}
 .leader-card:hover .leader-link,.leader-card:focus-visible .leader-link{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 @media (max-width:860px){.leaders-grid{grid-template-columns:1fr}}
 
+/* ---------- About Synartha ---------- */
+.about-sec{--gold:#e8b04b;--gold-deep:#a8741a;position:relative;overflow:hidden}
+.about-sec .wrap{position:relative;z-index:1}
+.about-kicker{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.about-block{max-width:48em}
+.about-block+.about-block,.about-trainers{margin-top:clamp(52px,6vw,80px)}
+.about-headline{font-size:clamp(1.9rem,4vw,3.1rem)}
+.about-copy p{margin-top:14px;max-width:46em;color:#c9ccd6;line-height:1.65}
+.about-divider{height:1px;background:rgba(255,255,255,.12);margin-block:clamp(44px,5.5vw,64px);max-width:48em}
+.about-trainers-sub{margin-top:14px;max-width:40em;color:#c9ccd6}
+.trainer-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,28px);margin-top:clamp(28px,4vw,40px)}
+.trainer-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:clamp(26px,3vw,34px);border-radius:22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);text-decoration:none;color:#fff;transition:border-color .25s var(--ease),box-shadow .3s var(--ease),transform .25s var(--ease),background-color .25s var(--ease)}
+.trainer-card:hover,.trainer-card:focus-visible{border-color:var(--gold);background:rgba(255,255,255,.07);box-shadow:0 20px 48px -24px rgba(0,0,0,.55);transform:translateY(-3px)}
+.trainer-avatar{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--gold);color:#15161b;font-weight:600;font-size:1.05rem;letter-spacing:.02em;margin-bottom:14px}
+.trainer-name{font-size:1.22rem;font-weight:500;letter-spacing:-.01em;color:#fff}
+.trainer-role{color:var(--gold);font-size:.86rem;margin-top:2px;font-weight:500}
+.trainer-bio{color:#c9ccd6;font-size:.94rem;margin-top:12px;line-height:1.65}
+.trainer-link{margin-top:18px;font-weight:500;color:#fff;display:inline-flex;align-items:center;gap:6px}
+.trainer-card:hover .trainer-link,.trainer-card:focus-visible .trainer-link{color:var(--gold);text-decoration:underline;text-underline-offset:4px}
+@media (max-width:860px){.trainer-grid{grid-template-columns:1fr}}
+.about-sec [data-observe]{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.about-sec [data-observe].in-view{opacity:1;transform:none}
+html:not(.js) .about-sec [data-observe]{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.about-sec [data-observe]{opacity:1;transform:none;transition:none}}
+
 /* ============ FINAL DARK ============ */
 .final{position:relative;margin-top:-56px;border-radius:44px 44px 0 0;background:var(--black);color:#c9ccd6;overflow:hidden;isolation:isolate;padding:clamp(90px,12vw,150px) 0 calc(110px + env(safe-area-inset-bottom))}
 .final::before{content:"";position:absolute;inset:0;z-index:-2;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.4px);background-size:26px 26px}
@@ -647,6 +672,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
 
 
 <nav class="dock" id="dock" aria-label="Sections">
+  <a href="#about">About</a>
   <a href="#journey">Journey</a>
   <a href="#benefits">Skills</a>
   <a href="#stack" class="opt-link">Tools</a>
@@ -677,6 +703,56 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
     <h1 class="h1" id="hero-title"><span class="mark">You need<svg class="doodle" viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 11C50 4 140 2 197 9" stroke="#fff" stroke-width="3"/></svg></span> <span class="mark">signal.<svg class="doodle" viewBox="0 0 100 16" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 9 12 3l7 11 8-11 7 11 8-11 7 11 8-11 7 11 8-11 7 11 8-11 7 7" stroke="#e43bd6" stroke-width="2.6"/></svg></span></h1>
     <p class="hero-lead">Build a career in Tech Sales, Business Development and Lead Generation, without becoming a developer.</p>
     <div class="actions"><a class="btn btn-white" href="#apply">Apply now</a><a class="btn btn-line" href="#journey">Explore the fellowship</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT SYNARTHA ================= -->
+<section class="dark about-sec" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about-block" data-observe>
+      <p class="about-kicker">About Synartha</p>
+      <h2 id="about-title" class="two-tone about-headline">Building Skills. Creating Opportunities. Shaping Careers.</h2>
+      <div class="about-copy">
+        <p>Synartha is a learning and professional development platform focused on Technology Sales, Business Development, Lead Generation, and AI-driven skills.</p>
+        <p>We believe that practical knowledge, the right guidance, and real-world execution can help individuals unlock better career opportunities and build successful professional journeys.</p>
+        <p>Our approach goes beyond traditional learning. We focus on developing industry-relevant skills that participants can apply in freelancing, sales careers, business development roles, and entrepreneurship.</p>
+      </div>
+    </div>
+
+    <div class="about-divider" aria-hidden="true"></div>
+
+    <div class="about-block" data-observe>
+      <p class="about-kicker">Our Vision</p>
+      <h3 class="two-tone about-headline">Making Industry-Ready Skills Accessible to Everyone.</h3>
+      <div class="about-copy">
+        <p>Our vision is to bridge the gap between learning and real-world opportunities by equipping individuals with practical skills, industry insights, and the confidence to succeed in a competitive global marketplace.</p>
+        <p>We aim to build a community of skilled, independent, and growth-oriented professionals who can create opportunities rather than simply wait for them.</p>
+      </div>
+    </div>
+
+    <div class="about-divider" aria-hidden="true"></div>
+
+    <div class="about-trainers" data-observe>
+      <p class="about-kicker">Meet Our Trainers</p>
+      <h3 class="two-tone about-headline">Meet the People Behind Synartha</h3>
+      <p class="about-trainers-sub">Learn from professionals who bring real-world industry experience into every training session.</p>
+      <div class="trainer-grid">
+        <a class="trainer-card" href="?page=leader-harsh" aria-label="View Harsh Kapil's trainer profile">
+          <span class="trainer-avatar" aria-hidden="true">HK</span>
+          <span class="trainer-name">Harsh Kapil</span>
+          <span class="trainer-role">Founder &amp; CEO | Lead Instructor</span>
+          <p class="trainer-bio">A sales and client acquisition professional with experience in B2B and B2C sales, global markets, lead generation, and business growth. Harsh focuses on practical sales strategies, client acquisition, and helping professionals develop skills they can apply in the real world.</p>
+          <span class="trainer-link">View full profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="trainer-card" href="?page=leader-rishit" aria-label="View Rishit Srivastava's trainer profile">
+          <span class="trainer-avatar" aria-hidden="true">RS</span>
+          <span class="trainer-name">Rishit Srivastava</span>
+          <span class="trainer-role">Co-Founder &amp; CTO | Lead Generation, Upwork &amp; Sales Trainer</span>
+          <p class="trainer-bio">A business development and sales professional with 12+ years of industry experience across international sales, Upwork, lead generation, and client acquisition. Rishit focuses on helping professionals master Upwork strategies, generate quality leads, win clients, and build effective sales processes.</p>
+          <span class="trainer-link">View full profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1072,7 +1148,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
     </div>
     <footer class="foot">
       <a class="brand brand-foot" href="#top" aria-label="Synartha, back to top"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="Footer"><a href="#about">About</a><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a></div>
       <div class="social-wrap"><span class="social-label" id="followLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="followLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </footer>
@@ -1294,7 +1370,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="followLbl2">Follow Synartha</span><div class="social" role="list" aria-labelledby="followLbl2"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1309,6 +1385,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
     <div class="tc-top">
       <a class="tc-brand" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
       <div class="tc-actions">
+        <a class="btn btn-line" href="./" data-home="#about">Back to About Synartha</a>
         <a class="btn btn-line" href="./" data-home="#leaders">Back to leadership</a>
         <a class="btn btn-white" href="./#apply" data-home="#apply">Apply now</a>
       </div>
@@ -1381,7 +1458,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="phFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="phFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1396,6 +1473,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
     <div class="tc-top">
       <a class="tc-brand" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
       <div class="tc-actions">
+        <a class="btn btn-line" href="./" data-home="#about">Back to About Synartha</a>
         <a class="btn btn-line" href="./" data-home="#leaders">Back to leadership</a>
         <a class="btn btn-white" href="./#apply" data-home="#apply">Apply now</a>
       </div>
@@ -1467,7 +1545,7 @@ html.page-leader-harsh,html.page-leader-rishit{scroll-padding-top:24px}
   <div class="tc-wrap">
     <div class="foot">
       <a class="brand brand-foot" href="./" data-home="" aria-label="Synartha home"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
+      <nav aria-label="Footer"><a href="./#about" data-home="#about">About</a><a href="./#journey" data-home="#journey">12-week journey</a><a href="./#benefits" data-home="#benefits">Skills</a><a href="./#stack" data-home="#stack">Tools</a><a href="./#for" data-home="#for">Who it's for</a><a href="./#leaders" data-home="#leaders">Leaders</a><a href="./#faq" data-home="#faq">FAQ</a><a href="./#apply" data-home="#apply">Apply</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a><a href="mailto:synartha21@gmail.com">synartha21@gmail.com</a></div>
       <div class="social-wrap"><span class="social-label" id="rsFollowLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="rsFollowLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </div>
@@ -1720,7 +1798,7 @@ const SYNARTHA_CONFIG = {
     if (!e.isIntersecting) return;
     dockLinks.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id));
   }), { rootMargin: '-45% 0px -50% 0px' });
-  ['journey', 'benefits', 'stack', 'for', 'leaders', 'faq'].forEach((id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
+  ['about', 'journey', 'benefits', 'stack', 'for', 'leaders', 'faq'].forEach((id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
 
   /* ---------- Who it's for: persona switcher ---------- */
   (function () {
