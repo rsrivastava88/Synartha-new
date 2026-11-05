@@ -412,6 +412,10 @@ html:not(.js) [data-prev],html:not(.js) [data-next]{display:none}
 @media (max-width:860px){.trainer-grid{grid-template-columns:1fr}}
 .about-trainers-panel{background:var(--black);color:#c9ccd6;border-radius:24px;padding:clamp(26px,3.6vw,44px);margin-top:18px}
 .about-trainers-panel .about-headline{color:#fff}
+.about-top-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,64px);align-items:start}
+@media (max-width:860px){.about-top-grid{grid-template-columns:1fr;row-gap:clamp(40px,6vw,56px)}}
+.about-top-grid .about-block{max-width:none}
+.contact-links{display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:20px}
 .about-sec [data-observe],#aboutSynarthaView [data-observe],#ourVisionView [data-observe]{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .about-sec [data-observe].in-view,#aboutSynarthaView [data-observe].in-view,#ourVisionView [data-observe].in-view{opacity:1;transform:none}
 html:not(.js) .about-sec [data-observe],html:not(.js) #aboutSynarthaView [data-observe],html:not(.js) #ourVisionView [data-observe]{opacity:1;transform:none}
@@ -691,7 +695,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
 
 
 <nav class="dock" id="dock" aria-label="Sections">
-  <a href="#about">About</a>
+  <a href="?page=about-synartha" target="_blank" rel="noopener">About</a>
   <a href="#journey">Journey</a>
   <a href="#benefits">Skills</a>
   <a href="#stack" class="opt-link">Tools</a>
@@ -709,7 +713,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   <div class="top-row">
     <a class="brand brand-top" href="#top" aria-label="Synartha, back to top"><span class="logo-full" aria-hidden="true"></span></a>
     <nav class="top-nav" aria-label="Primary">
-      <a href="#about">About</a>
+      <a href="?page=about-synartha" target="_blank" rel="noopener">About</a>
     </nav>
     <a class="btn btn-white" href="#apply">Apply now</a>
   </div>
@@ -729,53 +733,28 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
   </div>
 </section>
 
-<!-- ================= ABOUT SYNARTHA ================= -->
+<!-- ================= ABOUT SYNARTHA + CONTACT ================= -->
 <section class="dark about-sec" id="about" aria-labelledby="about-title">
-  <div class="wrap">
-    <a class="about-block about-card" data-observe href="?page=about-synartha" aria-label="Read the full About Synartha story">
+  <div class="wrap about-top-grid">
+    <div class="about-block" data-observe>
       <p class="about-kicker">About Synartha</p>
       <h2 id="about-title" class="two-tone about-headline">Building Skills. Creating Opportunities. Shaping Careers.</h2>
       <div class="about-copy">
-        <p>Synartha is a learning and professional development platform focused on Technology Sales, Business Development, Lead Generation, and AI-driven skills.</p>
-        <p>We believe that practical knowledge, the right guidance, and real-world execution can help individuals unlock better career opportunities and build successful professional journeys.</p>
-        <p>Our approach goes beyond traditional learning. We focus on developing industry-relevant skills that participants can apply in freelancing, sales careers, business development roles, and entrepreneurship.</p>
+        <p>Synartha is a learning and professional development platform focused on Technology Sales, Business Development, Lead Generation, and AI-driven skills, helping people build real career evidence in 12 weeks.</p>
       </div>
-      <span class="about-readmore">Read the full story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a>
+      <a class="about-readmore" href="?page=about-synartha" target="_blank" rel="noopener" aria-label="Read the full About Synartha story (opens in a new tab)">Read the full story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
 
-    <div class="about-divider" aria-hidden="true"></div>
-
-    <a class="about-block about-card" data-observe href="?page=our-vision" aria-label="Read our full vision">
-      <p class="about-kicker">Our Vision</p>
-      <h3 class="two-tone about-headline">Making Industry-Ready Skills Accessible to Everyone.</h3>
+    <div class="about-block" data-observe>
+      <p class="about-kicker">Contact Us</p>
+      <h3 class="two-tone about-headline" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">Questions? We're here to help.</h3>
       <div class="about-copy">
-        <p>Our vision is to bridge the gap between learning and real-world opportunities by equipping individuals with practical skills, industry insights, and the confidence to succeed in a competitive global marketplace.</p>
-        <p>We aim to build a community of skilled, independent, and growth-oriented professionals who can create opportunities rather than simply wait for them.</p>
+        <p>Call us or send an email and we'll get back to you about the fellowship.</p>
       </div>
-      <span class="about-readmore">Explore our vision <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a>
-
-    <div class="about-divider" aria-hidden="true"></div>
-
-    <div class="about-trainers" data-observe>
-      <p class="about-kicker">Meet Our Trainers</p>
-      <h3 class="two-tone about-headline">Meet the People Behind Synartha</h3>
-      <p class="about-trainers-sub">Learn from professionals who bring real-world industry experience into every training session.</p>
-      <div class="trainer-grid">
-        <a class="trainer-card" href="?page=leader-harsh" aria-label="View Harsh Kapil's trainer profile">
-          <span class="trainer-avatar" aria-hidden="true">HK</span>
-          <span class="trainer-name">Harsh Kapil</span>
-          <span class="trainer-role">Founder &amp; CEO | Lead Instructor</span>
-          <p class="trainer-bio">A sales and client acquisition professional with experience in B2B and B2C sales, global markets, lead generation, and business growth. Harsh focuses on practical sales strategies, client acquisition, and helping professionals develop skills they can apply in the real world.</p>
-          <span class="trainer-link">View full profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="trainer-card" href="?page=leader-rishit" aria-label="View Rishit Srivastava's trainer profile">
-          <span class="trainer-avatar" aria-hidden="true">RS</span>
-          <span class="trainer-name">Rishit Srivastava</span>
-          <span class="trainer-role">Co-Founder &amp; CTO | Lead Generation, Upwork &amp; Sales Trainer</span>
-          <p class="trainer-bio">A business development and sales professional with 12+ years of industry experience across international sales, Upwork, lead generation, and client acquisition. Rishit focuses on helping professionals master Upwork strategies, generate quality leads, win clients, and build effective sales processes.</p>
-          <span class="trainer-link">View full profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+      <div class="contact-links">
+        <a class="btn btn-line" href="tel:+919690498904">+91 96904 98904</a>
+        <a class="btn btn-line" href="tel:+919690498916">+91 96904 98916</a>
+        <a class="btn btn-line" href="mailto:synartha21@gmail.com">synartha21@gmail.com</a>
       </div>
     </div>
   </div>
@@ -1172,7 +1151,7 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     </div>
     <footer class="foot">
       <a class="brand brand-foot" href="#top" aria-label="Synartha, back to top"><span class="logo-full" aria-hidden="true"></span></a>
-      <nav aria-label="Footer"><a href="#about">About</a><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="Footer"><a href="?page=about-synartha" target="_blank" rel="noopener">About</a><a href="#journey">12-week journey</a><a href="#benefits">Skills</a><a href="#stack">Tools</a><a href="#for">Who it's for</a><a href="#leaders">Leaders</a><a href="#faq">FAQ</a></nav>
       <div class="contact"><a href="tel:+919690498904">+91 96904 98904</a><a href="tel:+919690498916">+91 96904 98916</a></div>
       <div class="social-wrap"><span class="social-label" id="followLbl">Follow Synartha</span><div class="social" role="list" aria-labelledby="followLbl"><a role="listitem" href="#" data-social="linkedin" aria-label="Visit Synartha on LinkedIn"><svg aria-hidden="true" focusable="false"><use href="#ico-linkedin"/></svg></a><a role="listitem" href="#" data-social="instagram" aria-label="Visit Synartha on Instagram"><svg aria-hidden="true" focusable="false"><use href="#ico-instagram"/></svg></a><a role="listitem" href="#" data-social="facebook" aria-label="Visit Synartha on Facebook"><svg aria-hidden="true" focusable="false"><use href="#ico-facebook"/></svg></a><a role="listitem" href="#" data-social="x" aria-label="Visit Synartha on X (formerly Twitter)"><svg aria-hidden="true" focusable="false"><use href="#ico-x"/></svg></a></div></div>
     </footer>
