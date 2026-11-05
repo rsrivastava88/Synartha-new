@@ -201,6 +201,8 @@ html:not(.js) .reveal-words .w{color:var(--ink)}
 .kv span{display:flex;flex-wrap:wrap;gap:6px}
 .kv em{font-style:normal;font-size:.74rem;padding:3px 9px;border-radius:999px;background:#f1f1f4;color:var(--mute)}
 .bar{height:7px;border-radius:7px;background:linear-gradient(90deg,#dfe1e8,#eef0f4)}
+.mbar{display:block;height:7px;border-radius:7px;background:#eef0f4;position:relative;overflow:hidden}
+.mbar i{position:absolute;inset:0;border-radius:7px;display:block}
 .tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .tool-grid div{display:flex;align-items:center;gap:10px;padding:12px;border-radius:12px;background:#fff;font-size:.84rem;color:var(--ink);font-weight:500}
 .tool-grid i{width:28px;height:28px;border-radius:8px;flex:none}
@@ -803,8 +805,8 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
             <div class="metrics">
               <div>Replies<span class="spark"><svg viewBox="0 0 120 28" preserveAspectRatio="none"><path d="M0 22C14 20 18 8 30 12s20 10 32 2 22-8 32-2 18 4 26-6" fill="none" stroke="#23d3b0" stroke-width="2"/></svg></span></div>
               <div>Response rates<span class="spark"><svg viewBox="0 0 120 28" preserveAspectRatio="none"><path d="M0 18c16-2 22-10 36-8s18 12 32 8 26-14 52-10" fill="none" stroke="#f3b416" stroke-width="2"/></svg></span></div>
-              <div>Qualified leads<span class="bar" style="width:70%"></span></div>
-              <div>Meetings<span class="bar" style="width:45%"></span></div>
+              <div>Qualified leads<span class="mbar"><i style="width:70%;background:linear-gradient(90deg,#b844ff,#e43bd6)"></i></span></div>
+              <div>Meetings<span class="mbar"><i style="width:45%;background:linear-gradient(90deg,#1d8bff,#23d3b0)"></i></span></div>
             </div>
             <div class="chart" aria-hidden="true"><i style="height:40%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:80%"></i><i style="height:58%"></i><i style="height:90%"></i><i style="height:66%"></i></div>
           </div>
