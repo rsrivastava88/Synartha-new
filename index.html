@@ -412,9 +412,6 @@ html:not(.js) [data-prev],html:not(.js) [data-next]{display:none}
 @media (max-width:860px){.trainer-grid{grid-template-columns:1fr}}
 .about-trainers-panel{background:var(--black);color:#c9ccd6;border-radius:24px;padding:clamp(26px,3.6vw,44px);margin-top:18px}
 .about-trainers-panel .about-headline{color:#fff}
-.about-top-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,64px);align-items:start}
-@media (max-width:860px){.about-top-grid{grid-template-columns:1fr;row-gap:clamp(40px,6vw,56px)}}
-.about-top-grid .about-block{max-width:none}
 .contact-links{display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:20px}
 .about-sec [data-observe],#aboutSynarthaView [data-observe],#ourVisionView [data-observe]{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .about-sec [data-observe].in-view,#aboutSynarthaView [data-observe].in-view,#ourVisionView [data-observe].in-view{opacity:1;transform:none}
@@ -729,33 +726,6 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
     <h1 class="h1" id="hero-title"><span class="mark">You need<svg class="doodle" viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 11C50 4 140 2 197 9" stroke="#fff" stroke-width="3"/></svg></span> <span class="mark">signal.<svg class="doodle" viewBox="0 0 100 16" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 9 12 3l7 11 8-11 7 11 8-11 7 11 8-11 7 11 8-11 7 11 8-11 7 7" stroke="#e43bd6" stroke-width="2.6"/></svg></span></h1>
     <p class="hero-lead">Build a career in Tech Sales, Business Development and Lead Generation, without becoming a developer.</p>
     <div class="actions"><a class="btn btn-white" href="#apply">Apply now</a><a class="btn btn-line" href="#journey">Explore the fellowship</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT SYNARTHA + CONTACT ================= -->
-<section class="dark about-sec" id="about" aria-labelledby="about-title">
-  <div class="wrap about-top-grid">
-    <div class="about-block" data-observe>
-      <p class="about-kicker">About Synartha</p>
-      <h2 id="about-title" class="two-tone about-headline">Building Skills. Creating Opportunities. Shaping Careers.</h2>
-      <div class="about-copy">
-        <p>Synartha is a learning and professional development platform focused on Technology Sales, Business Development, Lead Generation, and AI-driven skills, helping people build real career evidence in 12 weeks.</p>
-      </div>
-      <a class="about-readmore" href="?page=about-synartha" target="_blank" rel="noopener" aria-label="Read the full About Synartha story (opens in a new tab)">Read the full story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-
-    <div class="about-block" data-observe>
-      <p class="about-kicker">Contact Us</p>
-      <h3 class="two-tone about-headline" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">Questions? We're here to help.</h3>
-      <div class="about-copy">
-        <p>Call us or send an email and we'll get back to you about the fellowship.</p>
-      </div>
-      <div class="contact-links">
-        <a class="btn btn-line" href="tel:+919690498904">+91 96904 98904</a>
-        <a class="btn btn-line" href="tel:+919690498916">+91 96904 98916</a>
-        <a class="btn btn-line" href="mailto:synartha21@gmail.com">synartha21@gmail.com</a>
-      </div>
     </div>
   </div>
 </section>
@@ -1620,6 +1590,18 @@ html.page-about-synartha,html.page-our-vision{scroll-padding-top:24px}
               <span class="trainer-link">View full profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section class="tc-clause" id="as-contact" aria-labelledby="as-contact-title">
+        <h2 id="as-contact-title">Contact Us</h2>
+        <div class="tc-body">
+          <p>Questions? We're here to help. Call us or send an email and we'll get back to you about the fellowship.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-ink" href="tel:+919690498904">+91 96904 98904</a>
+          <a class="btn btn-ink" href="tel:+919690498916">+91 96904 98916</a>
+          <a class="btn btn-ink" href="mailto:synartha21@gmail.com">synartha21@gmail.com</a>
         </div>
       </section>
 
