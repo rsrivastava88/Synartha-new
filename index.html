@@ -190,8 +190,8 @@ html:not(.js) .reveal-words .w{color:var(--ink)}
 .stage{position:sticky;top:12vh;height:min(560px,74vh);display:grid;place-items:center}
 .stage::before{content:"";position:absolute;width:62%;height:44%;right:-4%;bottom:6%;border-radius:40% 60% 55% 45%;background:radial-gradient(circle at 30% 30%,#f4cfff,#b844ff 50%,#7a1ac2);filter:blur(1px);opacity:.85;transform:rotate(-12deg)}
 .mock-stack{position:relative;width:100%;height:100%}
-.mock{position:absolute;inset:6% 4%;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.9);border-radius:22px;box-shadow:0 30px 70px rgba(30,30,50,.12);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);padding:clamp(18px,2.4vw,28px);opacity:0;transform:translateY(16px) scale(.98);transition:opacity .45s var(--ease),transform .45s var(--ease);overflow:hidden}
-.mock.is-on{opacity:1;transform:none}
+.mock{position:absolute;inset:6% 4%;background:#fff;border:1px solid rgba(255,255,255,.9);border-radius:22px;box-shadow:0 30px 70px rgba(30,30,50,.12);padding:clamp(18px,2.4vw,28px);opacity:0;transform:translateY(16px) scale(.98);transition:opacity .45s var(--ease),transform .45s var(--ease);overflow:hidden;z-index:1}
+.mock.is-on{opacity:1;transform:none;z-index:2}
 .mock-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
 .mock-head b{color:var(--ink);font-weight:500;font-size:.98rem}
 .badge{font-size:.72rem;padding:4px 10px;border-radius:999px;background:#eef0ff;color:#4a55d6;font-weight:500}
